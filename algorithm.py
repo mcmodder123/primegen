@@ -27,7 +27,7 @@ def calc(starting_num, iterations):
 def main():
     
     x = int(input("starting number: "))
-    y = int(input("iterations: "))
+    y = int(input("ending number: "))
     
     
     start_time = time.perf_counter()
