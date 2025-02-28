@@ -13,8 +13,8 @@ This version includes three versions:
 
 Includes a calculation timer, an option to store the prime numbers to a text file, and most importantly, the algorithm.
 
-**Compiling**
-*Optimized*
-g++ -O3 -march=native -o primegen algorithm.cpp
-*Normal*
+**Compiling** <br/><br/>
+*Optimized* <br/><br/>
+g++ -O3 -march=native -o primegen algorithm.cpp <br/><br/>
+*Normal* <br/><br/>
 g++ algorithm.cpp -o primegen -O3
