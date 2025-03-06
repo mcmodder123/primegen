@@ -5,16 +5,19 @@ Made on Arch, BTW.
 <br/><br/>
 mc_modder, 2025
 
-This version includes three versions:
+This includes two versions:
 - C++ Version
-- Python Version
 - Precompiled Linux Binary
-- Extra Optimized Binary
 
-Includes a calculation timer, an option to store the prime numbers to a text file, and most importantly, the algorithm.
+For some reason, I decided to make it as optimized as possible, so older versions will no longer be maintained.
+
+**Usage**
+<br/><br/>
+Usage: ./primegen NUM
+Computes all prime numbers <= NUM.
 
 **Compiling** <br/><br/>
-*Optimized* <br/><br/>
-g++ -O3 -march=native -o primegen algorithm.cpp <br/><br/>
-*Normal* <br/><br/>
-g++ algorithm.cpp -o primegen -O3
+g++ -O3 -march=native -o primegen optoalgo.cpp <br/><br/>
+If compile time is too slow, use the below:
+<br/><br/>
+g++ optoalgo.cpp -o primegen
