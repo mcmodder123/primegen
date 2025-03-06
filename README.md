@@ -18,6 +18,7 @@ Computes all prime numbers <= NUM.
 
 **Compiling** <br/><br/>
 g++ -O3 -march=native -o primegen optoalgo.cpp <br/><br/>
-If compile time is too slow, use the below:
+For the ai speedup version:
 <br/><br/>
-g++ optoalgo.cpp -o primegen
+g++ -O3 -mavx2 -fopenmp -o primegen-aispeedup aispeedupalgo.cpp
+
